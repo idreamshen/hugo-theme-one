@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- COMMON TAGS -->
 	<title>{{ .Title }}</title>
+	{{ if $.Site.Params.icon }}
+	<link rel="icon" href="{{ $.Site.Params.icon }}">
+	{{ end }}
 	<!-- Search Engine -->
 	<meta name="description" content="{{ .Description }}">
 	<meta name="image" content="{{ $.Param "image" }}">
